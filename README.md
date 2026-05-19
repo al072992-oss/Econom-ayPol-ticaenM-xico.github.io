@@ -4,12 +4,6 @@
 
 La plataforma cuenta con un diseño responsivo, tipografía unificada, un sistema dinámico de cambio de esquema de color (Modo Oscuro / Modo Claro) y fuentes bibliográficas en formato APA.
 
-## 🚀 Demo En Vivo
-
-Puedes ver la plataforma web en funcionamiento aquí:
-👉 **[Instala aquí tu enlace de GitHub Pages]**
-
----
 
 ## 📚 Contenido Académico
 
