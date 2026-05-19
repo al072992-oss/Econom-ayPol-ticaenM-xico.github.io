@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #f4f7fb;
+    color: #1e293b;
+    line-height: 1.9;
+}
+
+/* HEADER */
+
+header{
+    background:
+    linear-gradient(rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop');
+
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+}
+
+/* NAVBAR */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 8%;
+    background: rgba(0,0,0,0.4);
+
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo{
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #38bdf8;
+}
+
+/* HERO */
+
+.hero{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+
+    padding: 20px;
+}
+
+.hero h1{
+    font-size: 65px;
+    max-width: 900px;
+}
+
+.hero p{
+    margin-top: 25px;
+    font-size: 22px;
+}
+
+.hero button{
+    margin-top: 40px;
+
+    padding: 16px 35px;
+    border: none;
+    border-radius: 10px;
+
+    background: #0284c7;
+    color: white;
+
+    font-size: 17px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.hero button:hover{
+    transform: scale(1.05);
+    background: #0369a1;
+}
+
+/* SECCIONES */
+
+.seccion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 60px;
+
+    padding: 100px 10%;
+}
+
+.seccion img{
+    width: 500px;
+    border-radius: 20px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.contenido{
+    max-width: 700px;
+}
+
+.contenido h2{
+    font-size: 42px;
+    margin-bottom: 25px;
+
+    color: #0f172a;
+}
+
+.contenido p{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.contenido ul{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+/* REFERENCIAS */
+
+.referencias{
+    padding: 80px 10%;
+    background: #e2e8f0;
+}
+
+.referencias h2{
+    margin-bottom: 30px;
+    font-size: 38px;
+}
+
+.referencias li{
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+
+footer{
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 900px){
+
+    nav{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1{
+        font-size: 40px;
+    }
+
+    .seccion{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .reverse{
+        flex-direction: column;
+    }
+
+    .seccion img{
+        width: 100%;
+    }
+}
